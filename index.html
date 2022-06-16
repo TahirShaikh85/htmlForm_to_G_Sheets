@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <title>HTML form data to Google Sheet</title>
+    <style>
+        form{
+            margin: 50px auto;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="heading"><h1 class="text-center mt-5">Contact Us</h1></div>
+   <div class="form-box">
+    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeh8cvjGGHP5D4SPCYcdaw0Fxikmf06H6o8hb1xdjyq2FAo4g/formResponse" method="POST" onsubmit="return validateForm();" >
+        <div class="form-group">
+            <label for="exampleFormControlInput2">Enter Name: </label>
+            <input type="text" class="form-control" name="entry.2098219297" id="exampleFormControlInput2" placeholder="Tony Stark">
+          </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Email address</label>
+          <input type="email" class="form-control" name="entry.1410554542" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1 ">Select Avenger</label>
+          <select class="form-control" name="entry.50826449" id="exampleFormControlSelect1" required="">
+            <option value="Bugatti Veyron">Bugatti Veyron</option>
+            <option value="Bugatti Chiron">Bugatti Chiron</option>
+            <option value="koenigsegg jesko">koenigsegg jesko</option>
+            <option value="Lamborghini Aventador SVJ">Lamborghini Aventador SVJ</option>
+          </select>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary mb-2">Submit</button>
+        </div>
+      </form>
+   </div>
+</div>
+
+<script>
+    function validateForm(){
+        
+    }
+</script>
+</body>
+</html>
